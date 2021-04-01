@@ -1,6 +1,6 @@
 from functools import lru_cache
 
-@lru_cache
+@lru_cache	
 def f(n):
 	if n > 30:
 		return n*n + 5*n + 4
