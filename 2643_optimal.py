@@ -13,3 +13,4 @@ for x in memory:
 		ans += min(memory[x], memory[100-x])
 
 ans //= 2
+print(ans)
