@@ -12,4 +12,5 @@ def f(x):
 		ans += f(x//4)
 	return ans
 
+
 print(f(18))
