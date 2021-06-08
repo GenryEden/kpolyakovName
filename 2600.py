@@ -2,7 +2,7 @@ def countDels(x):
 	ans = 0
 	for i in range(2, x):
 		if x % i == 0:
-			if isSimple(i) and isSimple(x//i):
+			if isSimple(x//i) and x//i != i:
 				return True
 			else:
 				return False
@@ -20,7 +20,7 @@ def isSimple(x):
 	return True
 # a = [x for x in range(268312, 336492) if countDels(x) == 2]
 a = []
-for x in range(268312, 336492):
+for x in range(268312, 336492+1):
 	if countDels(x):
 		a.append(x)
 
